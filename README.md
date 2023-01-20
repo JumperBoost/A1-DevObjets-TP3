@@ -37,7 +37,7 @@ Il est vivement recommandé d'utiliser au maximum les fonctionnalités de l'IDE 
 - Sauf indication contraire, **tous** les attributs que vous allez déclarer dans ce TP (et dans les TPs qui suivent) doivent être privés (`private`).
 - A priori, la plupart des méthodes devraient être déclarées publiques (`public`). Vous pouvez tout de même déclarer et utiliser des méthodes `private` du moment qu'elles vous sont utiles et que votre programme fonctionne correctement.
 - Afin de garder une trace de la progression de votre application, il vous est demandé de travailler dans **un package différent pour chaque exercice**. Pour cela, vous copierez les classes écrites pour un exercice dans le package de l'exercice suivant à l'aide de l'IDE dans le panneau *Project* à gauche pour qu'il corrige automatiquement les déclarations de package. Garder une trace de progression pour chaque exercice vous permettra de mieux comparer votre travail pour chaque exercice et vous permettra également de mieux _réviser_ plus tard.
-- Date limite de rendu de votre code sur votre dépôt GitLab : **dimanche 13 février à 23h**
+- Date limite de rendu de votre code sur votre dépôt GitLab : **dimanche 12 février à 23h**
 
 ### Exercice 1
 
@@ -50,7 +50,7 @@ Il est vivement recommandé d'utiliser au maximum les fonctionnalités de l'IDE 
  
     class GestionEtudiants {
         public static void main(String[] args) {
-            LocalDate maDate = LocalDate.of(2022, Month.FEBRUARY, 7);
+            LocalDate maDate = LocalDate.of(2023, Month.FEBRUARY, 5);
         }
     }
     ```
@@ -126,7 +126,7 @@ On souhaite étoffer le modèle objet conçu auparavant en y incluant les aspect
 
 1. Qu'observez-vous lorsque vous comparez les fonctions `calculerMoyenne()` de la classe `Etudiant` et `getMoyennePromo()` de la classe `Departement` ? Sans changer votre programme, discutez avec l'enseignant quelles seraient les modifications à apporter au programme afin d'éviter cette duplication de code.
 
-1. **Bonus** : Construisez le diagramme de classes correspondant au programme *Java* que vous avez écrit.
+1. **Bonus** : Construisez le diagramme de classes UML correspondant au programme *Java* que vous avez écrit (vous pouvez vous inspirez des exemples vus [en cours](https://www.lirmm.fr/~pvalicov/Cours/dev-objets/Generalites_x4.pdf)).
 
 ### Exercice 3
 
