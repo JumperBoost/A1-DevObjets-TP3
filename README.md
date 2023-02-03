@@ -75,7 +75,7 @@ Il est vivement recommandé d'utiliser au maximum les fonctionnalités de l'IDE 
 
 5. Créez une nouvelle variable `toto` de type `Etudiant` construite avec exactement les mêmes paramètres que `lolo`. Comparez les deux variables avec l'opérateur `==`. Que constatez-vous ?
 
-6. On se rend compte que `toto` devrait être un surnom de `lolo`. Modifiez votre programme pour faire en sorte que `toto` fasse référence à `lolo`. En invoquant la méthode `setNom(...)` sur l'objet `toto`, vérifiez que la modification se répercute bien sur `lolo`.
+6. On se rend compte que `toto` devrait être un surnom de `lolo`. Modifiez votre programme pour faire en sorte que `toto` **fasse référence à** `lolo`. En invoquant la méthode `setNom(...)` sur l'objet `toto`, vérifiez que la modification se répercute bien sur `lolo`.
 
 7. Créez une classe `Departement` qui aura comme attributs : une spécialité, une adresse et un tableau d'étudiants inscrits géré sous forme de liste. Pour déclarer une telle liste vous pouvez utiliser la classe `ArrayList` du package `java.util` (voir un exemple dans le cours). Munissez la classe d'un constructeur, qui prend comme paramètre une spécialité et une adresse. Définissez la méthode `toString()` dans `Departement` retournant un texte qui liste l'ensemble des étudiants du département.
 
@@ -107,7 +107,7 @@ On souhaite étoffer le modèle objet conçu auparavant en y incluant les aspect
     * Choisissez _Test..._
     * dans l'onglet _Testing library_ vous choisirez l'option _JUnit 5_
     * donnez un nom approprié à votre classe de tests unitaires (par ex. `EtudiantTest`) et cliquez sur _Ok_.
-    * Comme pour le TP précédent, la classe de tests générée sera automatiquement placée dans le même package que la classe testée et dans le répertoire correspondant aux tests. Pour écrire vos tests, vous pouvez vous inspirer des exemples vus dans le TP précédent. Vous devez ajouter au moins les tests suivants :
+    * Comme pour le TP précédent, la classe de tests générée sera automatiquement placée dans le même **package** que la classe testée et dans le répertoire correspondant aux tests. Pour écrire vos tests, vous pouvez vous inspirer des exemples vus dans le TP précédent. Vous devez ajouter au moins les tests suivants :
 
       ```
        test_calcul_moyenne_retourne_zero_Quand_Pas_De_Note()
@@ -126,7 +126,7 @@ On souhaite étoffer le modèle objet conçu auparavant en y incluant les aspect
 
 1. Qu'observez-vous lorsque vous comparez les fonctions `calculerMoyenne()` de la classe `Etudiant` et `getMoyennePromo()` de la classe `Departement` ? Sans changer votre programme, discutez avec l'enseignant quelles seraient les modifications à apporter au programme afin d'éviter cette duplication de code.
 
-1. **Bonus** : Construisez le diagramme de classes UML correspondant au programme *Java* que vous avez écrit (vous pouvez vous inspirez des exemples vus [en cours](https://www.lirmm.fr/~pvalicov/Cours/dev-objets/Generalites_x4.pdf)).
+1. **Bonus** : Construisez le diagramme de classes UML correspondant au programme *Java* que vous avez écrit (vous pouvez vous inspirer des exemples vus [en cours](https://www.lirmm.fr/~pvalicov/Cours/dev-objets/Generalites_x4.pdf)).
 
 ### Exercice 3
 
