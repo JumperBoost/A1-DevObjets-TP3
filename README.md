@@ -85,7 +85,10 @@ Il est vivement recommandé d'utiliser au maximum les fonctionnalités de l'IDE 
 
 9. Ajoutez une méthode `void desinscrire(...)` qui supprime un étudiant passé en paramètre de la liste des étudiants inscrits.
 
-10. Simulez votre application dans la classe principale en créant un département `monDepInfo` et en y inscrivant quatre étudiants dans cet ordre :  `lolo`, `fifi`, `toto`, `riri`. Désinscrivez ensuite `toto` du département. Que constatez-vous ?
+10. Simulez votre application dans la classe principale de la façon suivante :
+    * créez deux nouveaux étudiants `fifi` et `riri` (avec des noms différents de ceux déjà créés);
+    * créez un département `monDepInfo` et inscrivez-y les quatre étudiants dans cet ordre :  `lolo`, `fifi`, `toto`, `riri`.
+    * Désinscrivez ensuite `toto` du département. Que constatez-vous ?
 
 ### Exercice 2
 
