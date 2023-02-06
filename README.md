@@ -86,8 +86,8 @@ Il est vivement recommandé d'utiliser au maximum les fonctionnalités de l'IDE 
 9. Ajoutez une méthode `void desinscrire(...)` qui supprime un étudiant passé en paramètre de la liste des étudiants inscrits.
 
 10. Simulez votre application dans la classe principale de la façon suivante :
-    * créez deux nouveaux étudiants `fifi` et `riri` (avec des noms différents de ceux déjà créés);
-    * créez un département `monDepInfo` et inscrivez-y les quatre étudiants dans cet ordre :  `lolo`, `fifi`, `toto`, `riri`.
+    * Créez deux nouveaux étudiants `fifi` et `riri` (avec des noms différents de ceux déjà créés).
+    * Créez un département `monDepInfo` et inscrivez-y les quatre étudiants dans cet ordre :  `lolo`, `fifi`, `toto`, `riri`.
     * Désinscrivez ensuite `toto` du département. Que constatez-vous ?
 
 ### Exercice 2
@@ -129,7 +129,7 @@ On souhaite étoffer le modèle objet conçu auparavant en y incluant les aspect
 
 1. Qu'observez-vous lorsque vous comparez les fonctions `calculerMoyenne()` de la classe `Etudiant` et `getMoyennePromo()` de la classe `Departement` ? Sans changer votre programme, discutez avec l'enseignant quelles seraient les modifications à apporter au programme afin d'éviter cette duplication de code.
 
-1. **Bonus** : Construisez le diagramme de classes UML correspondant au programme *Java* que vous avez écrit (vous pouvez vous inspirer des exemples vus [en cours](https://www.lirmm.fr/~pvalicov/Cours/dev-objets/Generalites_x4.pdf)).
+1. Construisez le diagramme de classes UML correspondant au programme *Java* que vous avez écrit (vous pouvez vous inspirer des exemples vus [en cours](https://www.lirmm.fr/~pvalicov/Cours/dev-objets/Generalites_x4.pdf)). Vous pouvez utiliser [PlantUML](https://plantuml.com/fr/class-diagram) qui est un outil interactif en ligne libre et open-source. La syntaxe est très simple à apprendre pour faire des jolis diagrammes.
 
 ### Exercice 3
 
