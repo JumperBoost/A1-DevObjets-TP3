@@ -77,15 +77,17 @@ Il est vivement recommandé d'utiliser au maximum les fonctionnalités de l'IDE 
 
 6. On se rend compte que `toto` devrait être un surnom de `lolo`. Modifiez votre programme pour faire en sorte que `toto` **fasse référence à** `lolo`. En invoquant la méthode `setNom(...)` sur l'objet `toto`, vérifiez que la modification se répercute bien sur `lolo`.
 
-7. Créez une classe `Departement` qui aura comme attributs : une spécialité, une adresse et un tableau d'étudiants inscrits géré sous forme de liste. Pour déclarer une telle liste vous pouvez utiliser la classe `ArrayList` du package `java.util` (voir un exemple dans le cours). Munissez la classe d'un constructeur, qui prend comme paramètre une spécialité et une adresse. Définissez la méthode `toString()` dans `Departement` retournant un texte qui liste l'ensemble des étudiants du département.
+7. Créez dans la classe `GestionEtudiants` une fonction `static void copier(Etudiant e1, Etudiant e2)` qui remplace le contenu de l'objet référencé par `e1` par celui de `e2`. Constatez.
+
+8. Créez une classe `Departement` qui aura comme attributs : une spécialité, une adresse et un tableau d'étudiants inscrits géré sous forme de liste. Pour déclarer une telle liste vous pouvez utiliser la classe `ArrayList` du package `java.util` (voir un exemple dans le cours). Munissez la classe d'un constructeur, qui prend comme paramètre une spécialité et une adresse. Définissez la méthode `toString()` dans `Departement` retournant un texte qui liste l'ensemble des étudiants du département.
 
    **Indication :** Pensez à utiliser les fonctionnalités de l'IDE pour importer la classe `ArrayList` et pour générer le constructeur et la méthode `toString()`.
 
-8. Ajoutez une méthode `void inscrire(...)` dans la classe `Departement` qui prend en paramètre un étudiant et l'ajoute aux étudiants inscrits du département.
+9. Ajoutez une méthode `void inscrire(...)` dans la classe `Departement` qui prend en paramètre un étudiant et l'ajoute aux étudiants inscrits du département.
 
-9. Ajoutez une méthode `void desinscrire(...)` qui supprime un étudiant passé en paramètre de la liste des étudiants inscrits.
+10. Ajoutez une méthode `void desinscrire(...)` qui supprime un étudiant passé en paramètre de la liste des étudiants inscrits.
 
-10. Simulez votre application dans la classe principale de la façon suivante :
+11. Simulez votre application dans la classe principale de la façon suivante :
     * Créez deux nouveaux étudiants `fifi` et `riri` (avec des noms différents de ceux déjà créés).
     * Créez un département `monDepInfo` et inscrivez-y les quatre étudiants dans cet ordre :  `lolo`, `fifi`, `toto`, `riri`.
     * Désinscrivez ensuite `toto` du département. Que constatez-vous ?
