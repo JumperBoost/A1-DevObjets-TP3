@@ -31,13 +31,13 @@
 On se propose ici de réaliser une application de gestion des étudiants dans un département informatique d'un IUT.
 L'objectif est de développer l'application de manière incrémentale en ajoutant les fonctionnalités demandées au fur et à mesure.
 
-Il est vivement recommandé d'utiliser au maximum les fonctionnalités de l'IDE pour réaliser les tâches courantes (renommage d'attributs/méthodes, génération des différentes méthodes : constructeurs, setters, getters, etc.).
+Il est vivement recommandé d'utiliser au maximum les fonctionnalités de l'IDE pour réaliser les tâches courantes (renommage d'attributs/méthodes, génération des différentes méthodes : constructeurs, setters, getters, etc.). Dans les explications qui vont suivre, on supposera que l'IDE que vous utilisez est IntelliJ IDEA, si vous utilisez un autre IDE, pensez à adapter les consignes.
 
 ### Consignes
 - Sauf indication contraire, **tous** les attributs que vous allez déclarer dans ce TP (et dans les TPs qui suivent) doivent être privés (`private`).
 - A priori, la plupart des méthodes devraient être déclarées publiques (`public`). Vous pouvez tout de même déclarer et utiliser des méthodes `private` du moment qu'elles vous sont utiles et que votre programme fonctionne correctement.
 - Afin de garder une trace de la progression de votre application, il vous est demandé de travailler dans **un package différent pour chaque exercice**. Pour cela, vous copierez les classes écrites pour un exercice dans le package de l'exercice suivant à l'aide de l'IDE dans le panneau *Project* à gauche pour qu'il corrige automatiquement les déclarations de package. Garder une trace de progression pour chaque exercice vous permettra de mieux comparer votre travail pour chaque exercice et vous permettra également de mieux _réviser_ plus tard.
-- Date limite de rendu de votre code sur votre dépôt GitLab : **dimanche 12 février à 23h**
+- Date limite de rendu de votre code sur votre dépôt GitLab : **dimanche 4 février à 23h**
 
 ### Exercice 1
 
@@ -50,7 +50,7 @@ Il est vivement recommandé d'utiliser au maximum les fonctionnalités de l'IDE 
  
     class GestionEtudiants {
         public static void main(String[] args) {
-            LocalDate maDate = LocalDate.of(2023, Month.FEBRUARY, 5);
+            LocalDate maDate = LocalDate.of(2024, Month.JANUARY, 29);
         }
     }
     ```
@@ -183,6 +183,6 @@ De plus, les valeurs de certains attributs peuvent être inconnues au moment de 
 
    Ajoutez la classe `EtudiantBuilder` à votre application pour que l'instruction ci-dessus fonctionne.
 
-**Pour aller plus loin :** Vous noterez que la classe `EtudiantBuilder` sert uniquement à instancier des objets `Etudiant` de manière "organisée" et lisible. Le problème est qu'il est toujours possible d'instancier un objet de type `Etudiant` sans utiliser le _builder_ que vous avez écrit... C'est pour cela qu'il est possible d'améliorer la dernière solution en déclarant la classe `EtudiantBuilder` comme classe interne statique de la classe `Etudiant` et de rendre `private` le constructeur de la classe `Etudiant`. Ainsi la construction pourra se faire exclusivement à travers le _builder_ et celui-ci servira uniquement à la construction des objets de type `Etudiant`, car c'est son seul rôle. Pour plus de détails et explications, voir le modèle de conception _Builder_.
+**Pour aller plus loin :** Vous noterez que la classe `EtudiantBuilder` sert uniquement à instancier des objets `Etudiant` de manière "organisée" et lisible. Le problème est qu'il est toujours possible d'instancier un objet de type `Etudiant` sans utiliser le _builder_ que vous avez écrit... C'est pour cela qu'il est possible d'améliorer la dernière solution en déclarant la classe `EtudiantBuilder` comme classe interne statique de la classe `Etudiant` et de rendre `private` le constructeur de la classe `Etudiant`. Ainsi la construction pourra se faire exclusivement à travers le _builder_ et celui-ci servira uniquement à la construction des objets de type `Etudiant`, car c'est son seul rôle. Pour plus de détails et explications, voir le [modèle de conception _Builder_](https://fr.wikipedia.org/wiki/Monteur_(patron_de_conception)).
 
-Une explication approfondie des Builders est donnée dans _Effective Java_, J. Blosch, (2nd or 3rd edition).
+Une explication approfondie de l'implémentation des Builders en _Java_ est donnée dans _Effective Java_ de J. Blosch
