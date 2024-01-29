@@ -129,7 +129,7 @@ On souhaite étoffer le modèle objet conçu auparavant en y incluant les aspect
 
 1. Maintenant, on souhaite calculer la moyenne de toute la promo. Ajoutez dans la classe `Departement` la méthode `double getMoyennePromo()` qui retourne la moyenne de toute la promo et des tests unitaires appropriés dans la classe correspondante.
 
-1. Qu'observez-vous lorsque vous comparez les fonctions `calculerMoyenne()` de la classe `Etudiant` et `getMoyennePromo()` de la classe `Departement` ? Sans changer votre programme, discutez avec l'enseignant quelles seraient les modifications à apporter au programme afin d'éviter cette duplication de code.
+1. Avez-vous une duplication de code entre les fonctions `calculerMoyenne()` de la classe `Etudiant` et `getMoyennePromo()` de la classe `Departement` ? Si oui, quelles seraient les modifications à apporter au programme afin d'éviter cette duplication de code ?
 
 1. Construisez le diagramme de classes UML correspondant au programme *Java* que vous avez écrit (vous pouvez vous inspirer des exemples vus [en cours](https://www.lirmm.fr/~pvalicov/Cours/dev-objets/Generalites_x4.pdf)). Vous pouvez utiliser [PlantUML](https://plantuml.com/fr/class-diagram) qui est un outil interactif en ligne libre et open-source. La syntaxe est très simple à apprendre pour faire des jolis diagrammes.
 
