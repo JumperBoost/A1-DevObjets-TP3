@@ -117,8 +117,8 @@ On souhaite étoffer le modèle objet conçu auparavant en y incluant les aspect
       ```
        test_calcul_moyenne_retourne_zero_Quand_Pas_De_Note()
        test_calcul_moyenne_retourne_valeur_note_quand_une_seule_note()
-       test_calcul_moyenne_retourne_valeur_note_pondérée_quand_une_seule_note_avec_coefficient()
-       test_calcul_moyenne_retourne_moyenne_quand_plusieurs_notes_avec_differents_coefficients()
+       test_calcul_moyenne_retourne_valeur_note_quand_une_seule_note_avec_coefficient_de_1()
+       test_calcul_moyenne_retourne_valeur_note_quand_une_seule_note_avec_coefficient_autre_que_1()
       ```
 
       **Indication :** Il est assez difficile de comparer des nombres réels, car dans presque tous les langages de programmation, ils sont représentés en virgule flottante et par conséquent, ils sont _approximés_ (plus de documentation pour Java sur le [site d'Oracle](https://docs.oracle.com/javase/specs/jls/se17/html/jls-4.html#jls-4.2.3)). Une façon simple de comparer des réels est de les comparer à un epsilon près :
