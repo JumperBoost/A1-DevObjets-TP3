@@ -10,7 +10,7 @@ public class Etudiant {
     private LocalDate date_naissance;
     private String adresse_mail;
     private String adresse_postale;
-    private ArrayList<Note> notes = new ArrayList<Note>();
+    private final ArrayList<Note> notes = new ArrayList<>();
 
     public Etudiant(String nom, String prenom, LocalDate date_naissance, String adresse_mail, String adresse_postale) {
         this.nom = nom;

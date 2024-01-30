@@ -1,8 +1,8 @@
 package fr.umontpellier.iut.exo2;
 
 public class Note {
-    private Matiere matiere;
-    private float valeur;
+    private final Matiere matiere;
+    private final float valeur;
 
     public Note(Matiere matiere, float valeur) {
         this.matiere = matiere;
