@@ -34,5 +34,25 @@ public class GestionEtudiants {
         copier(jojo, toto);
         System.out.println(jojo);
         System.out.println("jojo == toto ? " + (jojo == toto)); // Résultat attendu: false
+
+
+        Etudiant fifi = new Etudiant("Jotans", "Filien",
+                LocalDate.of(2004, Month.JUNE, 16),
+                "filien.jotans@etu.umontpellier.fr", "24 Rue du Languedoc, 11100 Narbonne");
+        Etudiant riri = new Etudiant("Jotans", "Richard",
+                LocalDate.of(2008, Month.FEBRUARY, 26),
+                "richard.jotans@etu.umontpellier.fr", "24 Rue du Languedoc, 11100 Narbonne");
+        System.out.println(fifi);
+        System.out.println(riri);
+
+        Departement info = new Departement("Informatique", "99 Avenue d'Occitanie, 34090 Montpellier");
+        info.inscrire(lolo);
+        info.inscrire(fifi);
+        info.inscrire(toto);
+        info.inscrire(riri);
+        System.out.println(info);
+
+        info.desinscrire(toto);
+        System.out.println(info);
     }
 }
