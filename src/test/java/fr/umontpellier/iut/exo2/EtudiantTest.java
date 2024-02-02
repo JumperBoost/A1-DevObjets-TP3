@@ -50,7 +50,7 @@ class EtudiantTest {
         Etudiant lolo = new Etudiant("Moulin", "Loran",
                 LocalDate.of(2005, Month.JULY, 17),
                 "loran.moulin@etu.umontpellier.fr", "12 Rue du Moulin, 11440 Peyriac-de-Mer");
-        assertEquals(lolo.calculerMoyenne(), 0.0f);
+        assertEquals(lolo.calculerMoyenne(), 0);
     }
 
     @Test
@@ -60,7 +60,7 @@ class EtudiantTest {
                 "loran.moulin@etu.umontpellier.fr", "12 Rue du Moulin, 11440 Peyriac-de-Mer");
         Matiere math = new Matiere("Mathématiques", 1);
         lolo.noter(math, 16.0f);
-        assertEquals(lolo.calculerMoyenne(), 16.0f);
+        assertEquals(lolo.calculerMoyenne(), 16);
     }
 
     @Test
@@ -70,7 +70,7 @@ class EtudiantTest {
                 "loran.moulin@etu.umontpellier.fr", "12 Rue du Moulin, 11440 Peyriac-de-Mer");
         Matiere math = new Matiere("Mathématiques", 6);
         lolo.noter(math, 15.0f);
-        assertEquals(lolo.calculerMoyenne(), 90.0f / 6);
+        assertEquals(lolo.calculerMoyenne(), 90.0 / 6);
     }
 
     @Test
@@ -85,6 +85,6 @@ class EtudiantTest {
         lolo.noter(math, 16.0f);
         lolo.noter(eco, 14.0f);
         lolo.noter(anglais, 13.0f);
-        assertEquals(lolo.calculerMoyenne(), 164.0f / 11);
+        assertEquals(lolo.calculerMoyenne(), 164.0f / 11, 10e-3);
     }
 }

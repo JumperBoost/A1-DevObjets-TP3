@@ -2,9 +2,9 @@ package fr.umontpellier.iut.exo2;
 
 public class Note {
     private final Matiere matiere;
-    private final float valeur;
+    private final double valeur;
 
-    public Note(Matiere matiere, float valeur) {
+    public Note(Matiere matiere, double valeur) {
         this.matiere = matiere;
         this.valeur = valeur;
     }
@@ -13,7 +13,7 @@ public class Note {
         return this.matiere;
     }
 
-    public float getValeur() {
+    public double getValeur() {
         return this.valeur;
     }
 }

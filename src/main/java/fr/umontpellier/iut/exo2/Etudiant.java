@@ -60,18 +60,18 @@ public class Etudiant {
         this.adresse_postale = adresse_postale;
     }
 
-    public void noter(Matiere matiere, float valeur) {
+    public void noter(Matiere matiere, double valeur) {
         this.notes.add(new Note(matiere, valeur));
     }
 
-    public float calculerMoyenne() {
-        float somme = 0;
+    public double calculerMoyenne() {
+        double somme = 0;
         int coefficient = 0;
         for (Note note : this.notes) {
             somme += note.getValeur() * note.getMatiere().getCoefficient();
             coefficient += note.getMatiere().getCoefficient();
         }
-        return coefficient != 0 ? somme / coefficient : 0.0f;
+        return coefficient != 0 ? somme / coefficient : 0;
     }
 
     public String toString() {

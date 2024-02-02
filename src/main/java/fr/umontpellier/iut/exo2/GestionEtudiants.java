@@ -45,31 +45,31 @@ public class GestionEtudiants {
         System.out.println(fifi);
         System.out.println(riri);
 
-        Departement info = new Departement("Informatique", "99 Avenue d'Occitanie, 34090 Montpellier");
-        info.inscrire(lolo);
-        info.inscrire(fifi);
-        info.inscrire(toto);
-        info.inscrire(riri);
-        System.out.println(info);
+        Departement monDepInfo = new Departement("Informatique", "99 Avenue d'Occitanie, 34090 Montpellier");
+        monDepInfo.inscrire(lolo);
+        monDepInfo.inscrire(fifi);
+        monDepInfo.inscrire(toto);
+        monDepInfo.inscrire(riri);
+        System.out.println(monDepInfo);
 
-        info.desinscrire(toto);
-        System.out.println(info);
+        monDepInfo.desinscrire(toto);
+        System.out.println(monDepInfo);
 
         Matiere prog = new Matiere("Programmation", 6);
         Matiere bd = new Matiere("Base de données", 3);
         Matiere maths = new Matiere("Mathématiques", 4);
 
-        lolo.noter(prog, 12.0f);
-        lolo.noter(bd, 15.0f);
-        lolo.noter(maths, 10.0f);
+        lolo.noter(prog, 12);
+        lolo.noter(bd, 15);
+        lolo.noter(maths, 10.5);
 
-        fifi.noter(prog, 14.0f);
-        fifi.noter(bd, 16.0f);
-        fifi.noter(maths, 8.0f);
+        fifi.noter(prog, 14);
+        fifi.noter(bd, 16.75);
+        fifi.noter(maths, 8.5);
 
-        riri.noter(prog, 8.0f);
-        riri.noter(bd, 10.0f);
-        riri.noter(maths, 12.0f);
+        riri.noter(prog, 8.75);
+        riri.noter(bd, 10.25);
+        riri.noter(maths, 12);
 
         System.out.println(lolo);
         System.out.println(fifi);

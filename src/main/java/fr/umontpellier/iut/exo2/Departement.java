@@ -12,15 +12,23 @@ public class Departement {
         this.adresse = adresse;
     }
 
-    public String toString() {
-        return "Le département " + this.specialite + " est situé au '" + this.adresse + "', avec " + this.etudiants.size() + " étudiants.";
-    }
-
     public void inscrire(Etudiant etudiant) {
         this.etudiants.add(etudiant);
     }
 
     public void desinscrire(Etudiant etudiant) {
         this.etudiants.remove(etudiant);
+    }
+
+    public double getMoyennePromo() {
+        double somme = 0;
+        for (Etudiant etudiant : this.etudiants) {
+            somme += etudiant.calculerMoyenne();
+        }
+        return somme / this.etudiants.size();
+    }
+
+    public String toString() {
+        return "Le département " + this.specialite + " est situé au '" + this.adresse + "', avec " + this.etudiants.size() + " étudiant(s).";
     }
 }

@@ -45,14 +45,14 @@ public class GestionEtudiants {
         System.out.println(fifi);
         System.out.println(riri);
 
-        Departement info = new Departement("Informatique", "99 Avenue d'Occitanie, 34090 Montpellier");
-        info.inscrire(lolo);
-        info.inscrire(fifi);
-        info.inscrire(toto);
-        info.inscrire(riri);
-        System.out.println(info);
+        Departement monDepInfo = new Departement("Informatique", "99 Avenue d'Occitanie, 34090 Montpellier");
+        monDepInfo.inscrire(lolo);
+        monDepInfo.inscrire(fifi);
+        monDepInfo.inscrire(toto);
+        monDepInfo.inscrire(riri);
+        System.out.println(monDepInfo);
 
-        info.desinscrire(toto);
-        System.out.println(info);
+        monDepInfo.desinscrire(toto);
+        System.out.println(monDepInfo);
     }
 }
