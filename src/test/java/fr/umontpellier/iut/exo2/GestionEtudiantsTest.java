@@ -11,7 +11,7 @@ class GestionEtudiantsTest {
 
     @Test
     public void test_if_main_method_does_not_throw_exceptions() {
-        assertDoesNotThrow(() -> fr.umontpellier.iut.exo1.GestionEtudiants.main(new String[1]));
+        assertDoesNotThrow(() -> GestionEtudiants.main(new String[1]));
     }
 
     @Test
