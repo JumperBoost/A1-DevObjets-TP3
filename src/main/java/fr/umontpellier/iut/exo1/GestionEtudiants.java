@@ -6,11 +6,7 @@ import java.time.Month;
 public class GestionEtudiants {
 
     static void copier(Etudiant e1, Etudiant e2) {
-        e1.setNom(e2.getNom());
-        e1.setPrenom(e2.getPrenom());
-        e1.setDate_naissance(e2.getDate_naissance());
-        e1.setAdresse_mail(e2.getAdresse_mail());
-        e1.setAdresse_postale(e2.getAdresse_postale());
+        e1.remplacer(e2);
     }
 
     public static void main(String[] args) {
@@ -22,7 +18,6 @@ public class GestionEtudiants {
         Etudiant toto = lolo;
         System.out.println("lolo == toto ? " + (lolo == toto)); // Résultat attendu: true
         toto.setNom("Lupin");
-        toto.setAdresse_mail("loran.lupin@etu.umontpellier.fr");    // Optionnel
         System.out.println(lolo);
         System.out.println("lolo == toto ? " + (lolo == toto)); // Résultat attendu: true
 

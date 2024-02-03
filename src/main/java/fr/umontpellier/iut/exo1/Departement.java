@@ -21,6 +21,6 @@ public class Departement {
     }
 
     public String toString() {
-        return "Le département " + this.specialite + " est situé au '" + this.adresse + "', avec " + this.etudiants.size() + " étudiants.";
+        return "Le département " + this.specialite + " est situé au '" + this.adresse + "', avec " + this.etudiants.size() + " étudiant(s).";
     }
 }

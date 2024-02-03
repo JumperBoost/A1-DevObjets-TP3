@@ -5,7 +5,7 @@
 2. ✅
 3. ✅
 4. ✅
-5. Si on créé une nouvelle variable 'toto' avec les mêmes paramètres que 'lolo', les deux variables ne seront pas égaux car ils seront deux instances différentes de 'Etudiant' (et du coup pas les mêmes adresses mémoires).
+5. Si on créé une nouvelle variable 'toto' avec les mêmes paramètres que 'lolo', les deux variables ne seront pas égaux, car ils seront deux instances différentes de 'Etudiant' (et du coup pas les mêmes adresses mémoires).
 6. ✅
 7. ✅
 8. ✅
@@ -29,4 +29,7 @@
 # Exercice 3
 
 ## Questions
-1. 
+1. ✅
+2. Oui, il est possible. Seulement, toutes les valeurs qui ne seront pas définies dans le constructeur seront null.
+3. ✅
+4. L'avantage majeur de cette solution est qu'on peut les valeurs que l'on souhaite, et on peut aussi les modifier à tout moment. L'inconvénient est que si on oublie de définir une valeur, elle sera null (comme dit précédemment dans la Q2).

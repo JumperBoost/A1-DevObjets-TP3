@@ -42,20 +42,12 @@ public class Etudiant {
         this.nom = nom;
     }
 
-    public void setPrenom(String prenom) {
-        this.prenom = prenom;
-    }
-
-    public void setDate_naissance(LocalDate date_naissance) {
-        this.date_naissance = date_naissance;
-    }
-
-    public void setAdresse_mail(String adresse_mail) {
-        this.adresse_mail = adresse_mail;
-    }
-
-    public void setAdresse_postale(String adresse_postale) {
-        this.adresse_postale = adresse_postale;
+    public void remplacer(Etudiant etudiant) {
+        this.nom = etudiant.nom;
+        this.prenom = etudiant.prenom;
+        this.date_naissance = etudiant.date_naissance;
+        this.adresse_mail = etudiant.adresse_mail;
+        this.adresse_postale = etudiant.adresse_postale;
     }
 
     public String toString() {
