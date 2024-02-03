@@ -1,6 +1,7 @@
-# Exercice 1
+# Réponses aux exercices du TP 3
 
-## Questions
+## Exercice 1
+### Questions
 1. ✅
 2. ✅
 3. ✅
@@ -13,9 +14,8 @@
 10. ✅
 11. Après la suppression de 'toto' dans l'arraylist, l'élément n'est plus présent dans la liste (mais est toujours présent dans la mémoire), l'ordre est conservé et la taille de la liste à été réduite de 1.
 
-# Exercice 2
-
-## Questions
+## Exercice 2
+### Questions
 1. ✅
 2. ✅
 3. ✅
@@ -26,10 +26,10 @@
 8. 
 ![Diagramme de classe](./ressources/exo2.png)
 
-# Exercice 3
-
-## Questions
+## Exercice 3
+### Questions
 1. ✅
 2. Oui, il est possible. Seulement, toutes les valeurs qui ne seront pas définies dans le constructeur seront null.
 3. ✅
 4. L'avantage majeur de cette solution est qu'on peut les valeurs que l'on souhaite, et on peut aussi les modifier à tout moment. L'inconvénient est que si on oublie de définir une valeur, elle sera null (comme dit précédemment dans la Q2).
+5. ✅

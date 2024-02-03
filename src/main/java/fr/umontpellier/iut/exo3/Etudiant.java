@@ -1,16 +1,25 @@
 package fr.umontpellier.iut.exo3;
 
+
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 
-public class EtudiantJavaBeans {
+public class Etudiant {
     private String nom;
     private String prenom;
     private LocalDate date_naissance;
     private String adresse_mail;
     private String adresse_postale;
     private final ArrayList<Note> notes = new ArrayList<>();
+
+    public Etudiant(String nom, String prenom, LocalDate date_naissance, String adresse_mail, String adresse_postale) {
+        this.nom = nom;
+        this.prenom = prenom;
+        this.date_naissance = date_naissance;
+        this.adresse_mail = adresse_mail;
+        this.adresse_postale = adresse_postale;
+    }
 
     public String getNom() {
         return nom;
@@ -36,22 +45,6 @@ public class EtudiantJavaBeans {
         this.nom = nom;
     }
 
-    public void setPrenom(String prenom) {
-        this.prenom = prenom;
-    }
-
-    public void setDateNaissance(LocalDate date_naissance) {
-        this.date_naissance = date_naissance;
-    }
-
-    public void setAdresseMail(String adresse_mail) {
-        this.adresse_mail = adresse_mail;
-    }
-
-    public void setAdressePostale(String adresse_postale) {
-        this.adresse_postale = adresse_postale;
-    }
-
     public void noter(Matiere matiere, double valeur) {
         this.notes.add(new Note(matiere, valeur));
     }
@@ -64,6 +57,14 @@ public class EtudiantJavaBeans {
             coefficient += note.getMatiere().getCoefficient();
         }
         return coefficient != 0 ? somme / coefficient : 0;
+    }
+
+    public void remplacer(Etudiant etudiant) {
+        this.nom = etudiant.nom;
+        this.prenom = etudiant.prenom;
+        this.date_naissance = etudiant.date_naissance;
+        this.adresse_mail = etudiant.adresse_mail;
+        this.adresse_postale = etudiant.adresse_postale;
     }
 
     public String toString() {
